@@ -42,12 +42,4 @@ GET /files/:filename - Read a specific file
 POST /files/:filename - Create a file
 DELETE /files/:filename - Delete a file
 
-# Delete a file
-curl -X DELETE http://localhost:3000/files/test.txt
-File Structure
-file-manager-tool/
-├── fileManager.js    # Main application
-├── package.json      # Project configuration
-├── test.js          # Test examples
-├── README.md        # This file
-└── files/           # Directory for managed files (auto-created)
+
