@@ -1,0 +1,21 @@
+{
+  "name": "file-manager-tool",
+  "version": "1.0.0",
+  "description": "A simple file management tool using Node.js core modules",
+  "main": "fileManager.js",
+  "scripts": {
+    "start": "node fileManager.js",
+    "server": "node fileManager.js server",
+    "server:port": "node fileManager.js server 8080",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "file-management",
+    "nodejs",
+    "cli",
+    "http-server"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "node": ">=12.0.0"
+}
