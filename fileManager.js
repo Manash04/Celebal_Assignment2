@@ -9,7 +9,6 @@ class FileManager {
     this.ensureBaseDirectory();
   }
 
-  // Ensure base directory exists
   ensureBaseDirectory() {
     if (!fs.existsSync(this.baseDir)) {
       fs.mkdirSync(this.baseDir, { recursive: true });
@@ -17,12 +16,10 @@ class FileManager {
     }
   }
 
-  // Create a file with content
   createFile(filename, content = "") {
     try {
       const filePath = path.join(this.baseDir, filename);
 
-      // Check if file already exists
       if (fs.existsSync(filePath)) {
         return { success: false, message: `File '${filename}' already exists` };
       }
@@ -40,7 +37,6 @@ class FileManager {
     }
   }
 
-  // Read file content
   readFile(filename) {
     try {
       const filePath = path.join(this.baseDir, filename);
@@ -63,7 +59,6 @@ class FileManager {
     }
   }
 
-  // Delete a file
   deleteFile(filename) {
     try {
       const filePath = path.join(this.baseDir, filename);
@@ -85,7 +80,6 @@ class FileManager {
     }
   }
 
-  // List all files in the directory
   listFiles() {
     try {
       const files = fs.readdirSync(this.baseDir);
@@ -244,7 +238,6 @@ class FileManagerServer {
   }
 }
 
-// CLI Interface
 class FileManagerCLI {
   constructor(fileManager) {
     this.fileManager = fileManager;
