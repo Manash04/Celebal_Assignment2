@@ -5,9 +5,8 @@ Features
 ✅ Create files with custom content
 ✅ Read and display file contents
 ✅ Delete files safely
-✅ List all files with metadata
+✅ List all files 
 ✅ Interactive CLI interface
-✅ HTTP server with REST API
 
 Requirements
 
